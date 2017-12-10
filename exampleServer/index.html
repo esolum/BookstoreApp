@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bookstore</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var query = window.location.search;
+        console.log("query found: " + query);
+        
+        document.location.replace(
+            "standalone" in window.navigator ?
+            'bookstore://bookstore.com'+query :
+            'http://localhost:8000/index.html');
+
+        //document.location.replace(
+        //      "standalone" in window.navigator ?
+        //       'clovergooauth://oauthresult.com'+query :
+        //      'http://localhost:8000/index.html');
+        
+    </script>
+    <p>Hey, how you doin'? </p>
+</body>
+</html>
