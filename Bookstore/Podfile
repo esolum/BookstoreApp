@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.2'
+
+target 'Bookstore' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Bookstore
+  pod 'GoConnector', '~> 3.0.0'
+  pod 'ImageLoader', '~> 0.12'
+
+  target 'BookstoreTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'BookstoreUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
